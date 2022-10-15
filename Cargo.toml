@@ -21,6 +21,7 @@ rand = "0.8.3"
 crossbeam-queue = "0.3.1"
 ovr-sys = "0.3.0"
 nalgebra = "0.31.2"
+pad-motion = "0.1.6"
 
 [dev-dependencies]
 ctrlc = "3.1.8"
