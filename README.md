@@ -1,5 +1,17 @@
 # rust-ovr-cemuhook
-attempting to route OVR HMD tracking (orientation) data to Yuzu/Cemu via the Cemuhook protocol
+tiny server to route Oculus Rift HMD Tracking Data to Emulators using Cemuhook gamepad motion protocol
+
+### Build the server
+
+- `cargo build --release --example ovr-server`
+
+### Run the server
+
+- `clear; .\target\release\examples\ovr-server.exe`
+
+### Test the server
+
+- tested using PadTest.exe from here: [https://cemuhook.sshnuke.net/padudpserver.html](https://cemuhook.sshnuke.net/padudpserver.html)
 
 this is a combination of [zduny's pad-motion](https://github.com/zduny/pad_motion/) rust implementation, 
 
@@ -10,8 +22,6 @@ combined with the [dylanede's ovr-sys](https://github.com/dylanede/ovr-sys) libO
 2. mix it with ovrTrackingState.CalibratedOrigin, 
 
 3. then pass the deltas to [yuzu](https://github.com/yuzu-emu/yuzu) using the `cemuhook` protocol over a little UDP server. 
-
-tested using PadTest.exe from here: [https://cemuhook.sshnuke.net/padudpserver.html](https://cemuhook.sshnuke.net/padudpserver.html)
 
 seems to be working with super mario odyssey 1.3.0 in yuzu. still need to test breath of the wild.
 

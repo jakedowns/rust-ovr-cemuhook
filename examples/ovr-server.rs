@@ -1,5 +1,6 @@
 extern crate ovr_sys;
 extern crate nalgebra as na;
+extern crate pad_motion;
 
 use ovr_sys::*;
 // use std::io;
