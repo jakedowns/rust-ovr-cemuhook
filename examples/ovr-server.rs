@@ -68,11 +68,7 @@ fn main() {
         assert!(!session.is_null());
         println!("{:?}", luid);
 
-        // let mut virt_e = (0.0_f32,0.0_f32,0.0_f32);
-        // let mut delta_e = (0.0_f32,0.0_f32,0.0_f32);
-        // let mut prev_e = (0.0_f32,0.0_f32,0.0_f32);
-
-        // let G = 9.8;
+        let G = 9.8;
 
         let now = Instant::now();
         while running.load(Ordering::SeqCst) {
@@ -93,6 +89,11 @@ fn main() {
 
             let _lin_acc = t_state.HeadPose.LinearAcceleration;  // m/s^2
             let lin_acc = (_lin_acc.x, _lin_acc.y, _lin_acc.z);
+
+            // meters per second -> G's
+            lin_acc.0 /= G; 
+            lin_acc.1 /= G; 
+            lin_acc.2 /= G;
 
             let _ang_vel = t_state.HeadPose.AngularVelocity; // r/s
             let mut ang_vel = (_ang_vel.x, _ang_vel.y, _ang_vel.z);
