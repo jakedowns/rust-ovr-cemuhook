@@ -29,6 +29,10 @@ it's a little janky, but perhaps better than taping an android phone to your HMD
 
 ### 10/15/22
 nearly working, tho, the values are not right. lots of gimbal locking happening. nearly playable. but mostly a mess
+### 10/17/22
+mostly working now, in breath of the wild, it was working when zooming with the slate
+haven't tried aiming with it yet
+mario is more stable, but still mis-aligned. i think i need to offset one or two of the axes by 90deg or so
 
 ![image](https://user-images.githubusercontent.com/1683122/195977309-719c7902-a4fd-41d3-9f5b-25dbbb8bc77e.png)
 
