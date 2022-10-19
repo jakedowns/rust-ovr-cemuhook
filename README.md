@@ -37,3 +37,6 @@ mario is more stable, but still mis-aligned. i think i need to offset one or two
 ![image](https://user-images.githubusercontent.com/1683122/195977309-719c7902-a4fd-41d3-9f5b-25dbbb8bc77e.png)
 
 ![image](https://user-images.githubusercontent.com/1683122/195977320-03bff96a-7705-46b5-9a3d-f5a1b1e1ab1e.png)
+
+### similar work
+[DorsalVR](https://github.com/MichaelJW/DorsalVR)
