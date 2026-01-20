@@ -1,7 +1,7 @@
 [package]
 name = "rust-ovr-cemuhook"
 version = "0.0.1"
-authors = ["jakedowns <mail@jakedowns.com>"]
+authors = ["jakedowns"]
 edition = "2018"
 description = "tiny server to route Oculus HMD Tracking Data to Emulators using Cemuhook gamepad motion protocol"
 repository = "https://github.com/jakedowns/rust-ovr-cemuhook"
